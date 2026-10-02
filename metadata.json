@@ -1,0 +1,6 @@
+{
+  "name": "Véternaire — Clinical Editorial",
+  "description": "Plataforma editorial y médica para la gestión clínica, cronología de consultas, expedientes y quirófanos de alta medicina veterinaria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
