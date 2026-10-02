@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Véternaire — Especialistas & Cirujanos | Clinical Editorial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background-color: #f7fafe;
+      color: #181c1f;
+      -webkit-font-smoothing: antialiased;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body class="bg-[#f7fafe] text-[#181c1f] antialiased">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div style="height: 6rem; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(15,32,66,0.08);">
+      <a href="index.html" class="flex items-center gap-4 flex-shrink-0 group">
+        <img
+          alt="Véternaire Logo"
+          class="h-8 w-auto object-contain transition-transform group-hover:scale-105"
+          referrerPolicy="no-referrer"
+          src="https://lh3.googleusercontent.com/aida/AEtjO1X7HU8EOGU036UfnTwGtDOEtAe5c1THn5vizg9C-M_tLDMbVhL3nZZKsODrE-ayj9x7xzB6mk0FydnpPcwiN5TTnR9-ccbjxZMbagcs9uT1KgM7Pf1NF_38wxt02vyzje2QHj0PP0IPg0I7XDQOiCw_kshVeT4QJ2YAuQbLfVsqkzhkIyGafHGpi9T4ADOE10W953v8sQfVFeg7w_h2BPtKYF0lt9GpVf-mFBwBM9T5CCKbqiVhKKVA-gs"
+        />
+        <div class="flex flex-col">
+          <span class="font-serif text-2xl text-[#000922] font-semibold">VÉTERINAIRE</span>
+          <div class="flex items-center gap-2 text-xs">
+            <span class="font-bold tracking-widest text-[#0051d5] uppercase text-[10px]">VOL. XXIV — CLINICAL DISPATCH</span>
+            <span class="text-gray-400">•</span>
+            <span class="italic text-gray-600 font-serif text-[11px]">Paris VIII</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5 Navigation Links -->
+      <nav class="hidden xl:flex items-center gap-8 h-full">
+        <a href="index.html" class="h-full flex items-center px-1 font-medium text-sm text-gray-600 hover:text-[#000922]">Agenda &amp; Citas</a>
+        <a href="expedientes.html" class="h-full flex items-center px-1 font-medium text-sm text-gray-600 hover:text-[#000922]">Expedientes Pacientes</a>
+        <a href="especialistas.html" class="h-full flex items-center px-1 font-semibold text-sm text-[#000922] border-b-2 border-[#000922]">Especialistas</a>
+        <a href="cirugias.html" class="h-full flex items-center px-1 font-medium text-sm text-gray-600 hover:text-[#000922]">Cirugías &amp; Cuidados</a>
+        <a href="reportes.html" class="h-full flex items-center px-1 font-medium text-sm text-gray-600 hover:text-[#000922]">Reportes &amp; Métricas</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="bg-[#0f2042] text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-[#0051d5] transition-all">+ Nueva Cita</a>
+      </div>
+    </div>
+
+    <!-- Mobile Sub-Nav -->
+    <div class="xl:hidden flex items-center overflow-x-auto gap-2 px-4 py-2 bg-white border-b border-gray-100 text-xs">
+      <a href="index.html" class="px-3 py-1.5 rounded whitespace-nowrap text-gray-600 hover:bg-gray-100">Agenda &amp; Citas</a>
+      <a href="expedientes.html" class="px-3 py-1.5 rounded whitespace-nowrap text-gray-600 hover:bg-gray-100">Expedientes Pacientes</a>
+      <a href="especialistas.html" class="px-3 py-1.5 rounded whitespace-nowrap bg-[#000922] text-white font-semibold">Especialistas</a>
+      <a href="cirugias.html" class="px-3 py-1.5 rounded whitespace-nowrap text-gray-600 hover:bg-gray-100">Cirugías &amp; Cuidados</a>
+      <a href="reportes.html" class="px-3 py-1.5 rounded whitespace-nowrap text-gray-600 hover:bg-gray-100">Reportes &amp; Métricas</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="w-full pt-36 px-6 lg:px-10 pb-16">
+    <div class="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 pb-6 border-b border-gray-200">
+      <div>
+        <div class="flex items-center gap-3 text-xs mb-2">
+          <span class="px-2.5 py-1 bg-[#0f2042] text-white font-bold tracking-widest text-[10px] rounded uppercase">FACULTAD MÉDICA &amp; COLEGIO QUIRÚRGICO</span>
+          <span class="text-gray-400">•</span>
+          <span class="italic font-serif text-gray-500">Corps Médical d'Élite Paris VIII</span>
+        </div>
+        <h1 class="font-serif text-3xl sm:text-4xl text-[#000922] font-semibold tracking-tight">
+          Especialistas &amp; <span class="italic text-[#0051d5]">Cirujanos</span> Titulares
+        </h1>
+        <p class="mt-1 text-xs sm:text-sm text-gray-600 max-w-2xl font-serif italic">
+          Diplomados europeos (EBVS), doctores investigadores y cirujanos de guardia dedicados a la máxima excelencia biomédica.
+        </p>
+      </div>
+    </div>
+
+    <!-- Doctors Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
+      
+      <!-- Doctor 1 -->
+      <article class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm flex flex-col justify-between">
+        <div>
+          <div class="flex items-start justify-between gap-4 pb-4 border-b border-gray-100">
+            <div class="flex items-center gap-4">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUiFwOHr0CV1-3u4oeV5wVepFhweC8ZRxaR1OKAF6J4apSsNPmE9xnHtxqdXNYh0uGGGnXvYC02RREcQ6FthYEvs1gdl4dVXuVaC9Z_HC7LBx-_fyCy6-oKH__bj93oS9IjzAFiWASTXf4KnWVOYtb4uNXNubw9-Ejp2fnaoqcEuXi2DCHTVWWbzy9b9Qh2nQNreXq5oHrasApMSM1coIpiw1mDqqN89mEL0Wo4o_LWdTbEa3eR5f7"
+                alt="Dra. Moreau"
+                referrerPolicy="no-referrer"
+                class="w-16 h-16 rounded-full object-cover ring-2 ring-gray-200 shadow-sm"
+              />
+              <div>
+                <h3 class="font-serif text-xl text-[#000922] font-semibold">Dra. Élise Moreau</h3>
+                <span class="text-xs font-semibold text-[#0051d5] block">Cirugía &amp; Ortopedia</span>
+                <span class="text-[11px] text-gray-500 font-serif italic">Traumatología Espinal &amp; TPLO</span>
+              </div>
+            </div>
+            <span class="px-2.5 py-1 text-[10px] font-bold uppercase rounded-full bg-[#ffdad6] text-[#93000a] border border-[#ffb4ab]">
+              En Quirófano
+            </span>
+          </div>
+
+          <div class="py-4 space-y-3">
+            <div class="text-xs text-gray-700 font-mono bg-[#f7fafe] p-2.5 rounded border border-gray-200">
+              <span class="text-gray-400 text-[10px] block font-sans">TÍTULOS</span>
+              Diplomate ECVS · Faculté de Médecine Vétérinaire Maisons-Alfort
+            </div>
+            <p class="text-xs text-gray-600 leading-relaxed font-serif italic">
+              «Pionera en técnicas de osteotomía TPLO y reemplazo total de cadera con prótesis de titanio poroso en felinos y caninos.»
+            </p>
+            <div class="grid grid-cols-2 gap-2 text-xs pt-2">
+              <div class="p-2 bg-[#f1f4f8] rounded">
+                <span class="text-gray-400 text-[10px] block">UBICACIÓN</span>
+                <strong class="text-[#000922]">Quirófano Mayor · Sala 1</strong>
+              </div>
+              <div class="p-2 bg-[#f1f4f8] rounded">
+                <span class="text-gray-400 text-[10px] block">PACIENTES HOY</span>
+                <strong class="text-[#0051d5]">3 intervenciones complejas</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-gray-100 flex items-center justify-between text-xs">
+          <span class="text-gray-500 font-mono">+33 1 42 68 55 10</span>
+          <a href="index.html" class="px-3.5 py-1.5 bg-[#000922] hover:bg-[#0051d5] text-white font-semibold rounded-lg flex items-center gap-1">
+            <span class="material-symbols-outlined text-sm">calendar_month</span>
+            <span>Agendar con Dra. Moreau</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Doctor 2 -->
+      <article class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm flex flex-col justify-between">
+        <div>
+          <div class="flex items-start justify-between gap-4 pb-4 border-b border-gray-100">
+            <div class="flex items-center gap-4">
+              <div class="w-16 h-16 rounded-full bg-[#0f2042] text-white flex items-center justify-center font-serif text-xl font-bold shadow-sm">JL</div>
+              <div>
+                <h3 class="font-serif text-xl text-[#000922] font-semibold">Dr. Jean-Luc Mercier</h3>
+                <span class="text-xs font-semibold text-[#0051d5] block">Cardiología Diagnóstica</span>
+                <span class="text-[11px] text-gray-500 font-serif italic">Ecocardiografía Avanzada &amp; Doppler</span>
+              </div>
+            </div>
+            <span class="px-2.5 py-1 text-[10px] font-bold uppercase rounded-full bg-[#dbe1ff] text-[#00174b] border border-[#b4c5ff]">
+              En Consulta
+            </span>
+          </div>
+
+          <div class="py-4 space-y-3">
+            <div class="text-xs text-gray-700 font-mono bg-[#f7fafe] p-2.5 rounded border border-gray-200">
+              <span class="text-gray-400 text-[10px] block font-sans">TÍTULOS</span>
+              PhD Sorbonne Université · ECVIM-CA Cardiology
+            </div>
+            <p class="text-xs text-gray-600 leading-relaxed font-serif italic">
+              «Especialista en valvulopatías degenerativas mitral felinas y caninas, arritmias complejas y angiografía con stent coronario.»
+            </p>
+            <div class="grid grid-cols-2 gap-2 text-xs pt-2">
+              <div class="p-2 bg-[#f1f4f8] rounded">
+                <span class="text-gray-400 text-[10px] block">UBICACIÓN</span>
+                <strong class="text-[#000922]">Gabinete Ecografía A</strong>
+              </div>
+              <div class="p-2 bg-[#f1f4f8] rounded">
+                <span class="text-gray-400 text-[10px] block">PACIENTES HOY</span>
+                <strong class="text-[#0051d5]">6 consultas ecocardiográficas</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-gray-100 flex items-center justify-between text-xs">
+          <span class="text-gray-500 font-mono">+33 1 42 68 55 12</span>
+          <a href="index.html" class="px-3.5 py-1.5 bg-[#000922] hover:bg-[#0051d5] text-white font-semibold rounded-lg flex items-center gap-1">
+            <span class="material-symbols-outlined text-sm">calendar_month</span>
+            <span>Agendar con Dr. Mercier</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Doctor 3 -->
+      <article class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm flex flex-col justify-between">
+        <div>
+          <div class="flex items-start justify-between gap-4 pb-4 border-b border-gray-100">
+            <div class="flex items-center gap-4">
+              <div class="w-16 h-16 rounded-full bg-[#ba1a1a] text-white flex items-center justify-center font-serif text-xl font-bold shadow-sm">CS</div>
+              <div>
+                <h3 class="font-serif text-xl text-[#000922] font-semibold">Dra. Camille Sauvage</h3>
+                <span class="text-xs font-semibold text-[#ba1a1a] block">Urgencias &amp; Cuidados Críticos</span>
+                <span class="text-[11px] text-gray-500 font-serif italic">Medicina Transfusional &amp; Soporte UCI</span>
+              </div>
+            </div>
+            <span class="px-2.5 py-1 text-[10px] font-bold uppercase rounded-full bg-[#ba1a1a] text-white">
+              Triaje Activo
+            </span>
+          </div>
+
+          <div class="py-4 space-y-3">
+            <div class="text-xs text-gray-700 font-mono bg-[#f7fafe] p-2.5 rounded border border-gray-200">
+              <span class="text-gray-400 text-[10px] block font-sans">TÍTULOS</span>
+              Diplomate ECVECC · Réanimation Vétérinaire Paris
+            </div>
+            <p class="text-xs text-gray-600 leading-relaxed font-serif italic">
+              «Coordinadora del protocolo editorial de resucitación y ecografía FAST abdominal/torácica en politraumatismos.»
+            </p>
+            <div class="grid grid-cols-2 gap-2 text-xs pt-2">
+              <div class="p-2 bg-[#f1f4f8] rounded">
+                <span class="text-gray-400 text-[10px] block">UBICACIÓN</span>
+                <strong class="text-[#000922]">Box UCI 3 / Triaje</strong>
+              </div>
+              <div class="p-2 bg-[#f1f4f8] rounded">
+                <span class="text-gray-400 text-[10px] block">PACIENTES HOY</span>
+                <strong class="text-red-700">5 ingresos críticos</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-gray-100 flex items-center justify-between text-xs">
+          <span class="text-gray-500 font-mono">+33 1 42 68 55 18</span>
+          <a href="index.html" class="px-3.5 py-1.5 bg-[#ba1a1a] hover:bg-[#93000a] text-white font-semibold rounded-lg flex items-center gap-1">
+            <span class="material-symbols-outlined text-sm">emergency</span>
+            <span>Urgencia Directa</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Doctor 4 -->
+      <article class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm flex flex-col justify-between">
+        <div>
+          <div class="flex items-start justify-between gap-4 pb-4 border-b border-gray-100">
+            <div class="flex items-center gap-4">
+              <div class="w-16 h-16 rounded-full bg-[#000922] text-white flex items-center justify-center font-serif text-xl font-bold shadow-sm">AB</div>
+              <div>
+                <h3 class="font-serif text-xl text-[#000922] font-semibold">Dr. Antoine Blanchard</h3>
+                <span class="text-xs font-semibold text-[#0051d5] block">Dermatología &amp; Alergología</span>
+                <span class="text-[11px] text-gray-500 font-serif italic">Inmunoterapia Biológica Cutánea</span>
+              </div>
+            </div>
+            <span class="px-2.5 py-1 text-[10px] font-bold uppercase rounded-full bg-[#e5e8ec] text-[#000922]">
+              Disponible
+            </span>
+          </div>
+
+          <div class="py-4 space-y-3">
+            <div class="text-xs text-gray-700 font-mono bg-[#f7fafe] p-2.5 rounded border border-gray-200">
+              <span class="text-gray-400 text-[10px] block font-sans">TÍTULOS</span>
+              Diplomate ECVD · Ancien Interne CHV Saint-Denis
+            </div>
+            <p class="text-xs text-gray-600 leading-relaxed font-serif italic">
+              «Experto en dermatosis autoinmunes complejas, otitis crónicas refractarias y protocolos de desensibilización monoclonal.»
+            </p>
+            <div class="grid grid-cols-2 gap-2 text-xs pt-2">
+              <div class="p-2 bg-[#f1f4f8] rounded">
+                <span class="text-gray-400 text-[10px] block">UBICACIÓN</span>
+                <strong class="text-[#000922]">Salón Bleu Dermatología</strong>
+              </div>
+              <div class="p-2 bg-[#f1f4f8] rounded">
+                <span class="text-gray-400 text-[10px] block">PACIENTES HOY</span>
+                <strong class="text-[#0051d5]">4 consultas programadas</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-gray-100 flex items-center justify-between text-xs">
+          <span class="text-gray-500 font-mono">+33 1 42 68 55 22</span>
+          <a href="index.html" class="px-3.5 py-1.5 bg-[#000922] hover:bg-[#0051d5] text-white font-semibold rounded-lg flex items-center gap-1">
+            <span class="material-symbols-outlined text-sm">calendar_month</span>
+            <span>Agendar con Dr. Blanchard</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+</body>
+</html>
